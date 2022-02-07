@@ -1,1 +1,32 @@
 /* font-family: "Kumbh Sans", sans-serif; */
+@media only screen and (min-width: 1280px) {
+  .nav-bar {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+  .nav-links p {
+    font-size: 16px !important;
+    font-family: "Kumbh Sans", sans-serif !important;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .cart-logo {
+    height: 25px;
+    margin-top: 5px;
+  }
+  .usr-icon {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} ;
