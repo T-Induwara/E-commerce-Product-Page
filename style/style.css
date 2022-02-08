@@ -8,10 +8,63 @@
   border-radius: 50px;
   border: 3px solid hsl(26, 100%, 55%) !important;
 }
+/*Start of mobile css for nav bar*/
+.nav-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav-links {
+  z-index: 10;
+  display: none;
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 2vh;
+  padding-left: 5vw;
+  background-color: white;
+  box-shadow: 200px 0px rgba(0, 0, 0, 0.678);
+}
+#nav-p1 {
+  margin-top: 40px;
+}
+.nav-links p {
+  font-family: "Kumbh Sans", sans-serif !important;
+  font-weight: 700;
+}
+.m-nav-icon {
+  margin-left: -2vw;
+}
+.web-logo {
+  margin-left: 4vw;
+}
+.cart-logo {
+  position: absolute;
+  margin-left: 6vw;
+  margin-top: 4px;
+}
+.usr-icon {
+  width: 30%;
+  float: right;
+}
+.navbar-hr {
+  display: none;
+}
+
 @media only screen and (min-width: 1280px) {
   .nav-bar {
     padding-top: 40px;
     padding-bottom: 20px;
+  }
+  .m-nav-icon {
+    display: none;
+  }
+  .m-nav-close {
+    display: none;
+  }
+  .web-logo {
+    margin-left: 0;
   }
   .nav-links {
     display: flex;
@@ -19,6 +72,18 @@
     justify-content: center;
     margin-left: 40px;
     margin-top: 5px;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: unset;
+    top: unset;
+    padding-top: 0;
+    padding-left: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  #nav-p1 {
+    margin-top: 0px;
   }
   .nav-links p {
     font-size: 16px !important;
@@ -30,7 +95,9 @@
     border-bottom: 3px solid transparent;
   }
   .cart-logo {
+    position: relative;
     height: 25px;
+    margin-left: 0px;
     margin-top: 5px;
   }
   .usr-icon {
@@ -40,5 +107,11 @@
     margin-right: auto;
     border-radius: 50px;
     border: 3px solid transparent;
+  }
+  .navbar-hr {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -38px;
   }
 } ;
