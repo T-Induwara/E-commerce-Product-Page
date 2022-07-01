@@ -1,11 +1,20 @@
 console.log("Script Loaded");
 
-$(".nav-p").hover(function(){
-    $(this).toggleClass("nav-active");
+$(".nav-p").mouseenter(function(){
+    $(this).addClass("nav-active");
     $(this).css("cursor","help");
 })
-$(".usr-icon").hover(function(){
-    $(this).toggleClass("usr-hover");
+$(".nav-p").mouseleave(function(){
+    $(this).removeClass("nav-active");
+    $(this).css("cursor","help");
+    $(this).css("transition","0.6s");
+})
+$(".usr-icon").mouseenter(function(){
+    $(this).addClass("usr-hover");
+})
+$(".usr-icon").mouseleave(function(){
+    $(this).removeClass("usr-hover");
+    $(this).css("transition","0.6s");
 })
 
 //Following codes for mobile nav bar icons
