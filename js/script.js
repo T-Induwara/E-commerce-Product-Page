@@ -30,9 +30,18 @@ $(".m-nav-close").click(function(){
 });
 
 //Following codes for cart icon visibility
+/*
 $(".cart-logo").click(function(){
     $(".cart-conts").toggleClass("cart-conts-hide");
 })
-let cart = document.getElementById("cart-conts");
-const body = document.getElementsByTagName("body")[0];
+*/
+$(".cart-logo").click(function(e){
+    $(".cart-conts").toggle();
+    $(".cart-logo").css("opacity","1");
+    e.stopPropagation();
+});
 
+$(document).click(function(){
+    $(".cart-conts").hide();
+    $(".cart-logo").css("opacity","0.7");
+});
