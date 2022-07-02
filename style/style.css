@@ -43,6 +43,12 @@
   position: absolute;
   margin-left: 6vw;
   margin-top: 4px;
+  opacity:0.7;
+  transition: 0.7s;
+}
+.cart-logo:hover{
+  opacity:1;
+  transition: 0.7s;
 }
 .usr-icon {
   width: 30%;
@@ -51,6 +57,17 @@
 .navbar-hr {
   display: none;
   z-index: 2;
+}
+.cart-conts{
+  background-color: white;
+  padding:10px 15px 10px 15px !important;
+  border-radius:10px;
+  display:none;
+  position:absolute;
+  z-index:5;
+}
+.cart-conts-hide{
+  display:block;
 }
 .ct-title-section p{
   font-family: "Kumbh Sans", sans-serif;
@@ -61,12 +78,6 @@
   font-family: "Kumbh Sans", sans-serif;
   color:rgba(128, 128, 128, 0.838);
   font-weight:600 !important;
-}
-.cart-conts{
-  background-color: white;
-  padding:10px 15px 10px 15px !important;
-  position:absolute;
-  z-index:5;
 }
 
 @media only screen and (min-width: 1280px) {

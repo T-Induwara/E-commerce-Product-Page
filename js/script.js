@@ -28,3 +28,11 @@ $(".m-nav-close").click(function(){
         $(".nav-links").css("display","none");
     })
 });
+
+//Following codes for cart icon visibility
+$(".cart-logo").click(function(){
+    $(".cart-conts").toggleClass("cart-conts-hide");
+})
+let cart = document.getElementById("cart-conts");
+const body = document.getElementsByTagName("body")[0];
+
