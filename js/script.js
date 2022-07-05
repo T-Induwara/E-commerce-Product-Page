@@ -52,27 +52,37 @@ let clickImg2 = $("#p-image2");
 let clickImg3 = $("#p-image3");
 let clickImg4 = $("#p-image4");
 
+let showImage = $("#product-image-showcase");
+
 clickImg1.click(function(){
     $(this).addClass("product-image-active");
     clickImg2.removeClass("product-image-active");
     clickImg3.removeClass("product-image-active");
     clickImg4.removeClass("product-image-active");
+
+    showImage.attr("src","images/image-product-1.jpg");
 })
 clickImg2.click(function(){
     $(this).addClass("product-image-active");
     clickImg1.removeClass("product-image-active");
     clickImg3.removeClass("product-image-active");
     clickImg4.removeClass("product-image-active");
+
+    showImage.attr("src","images/image-product-2.jpg");
 })
 clickImg3.click(function(){
     $(this).addClass("product-image-active");
     clickImg1.removeClass("product-image-active");
     clickImg2.removeClass("product-image-active");
     clickImg4.removeClass("product-image-active");
+
+    showImage.attr("src","images/image-product-3.jpg");
 })
 clickImg4.click(function(){
     $(this).addClass("product-image-active");
     clickImg1.removeClass("product-image-active");
     clickImg2.removeClass("product-image-active");
     clickImg3.removeClass("product-image-active");
+
+    showImage.attr("src","images/image-product-4.jpg");
 })
