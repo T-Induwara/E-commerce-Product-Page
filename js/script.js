@@ -45,3 +45,34 @@ $(document).click(function(){
     $(".cart-conts").hide();
     $(".cart-logo").css("opacity","0.7");
 });
+
+//following codes for product showcase section
+let clickImg1 = $("#p-image1");
+let clickImg2 = $("#p-image2");
+let clickImg3 = $("#p-image3");
+let clickImg4 = $("#p-image4");
+
+clickImg1.click(function(){
+    $(this).addClass("product-image-active");
+    clickImg2.removeClass("product-image-active");
+    clickImg3.removeClass("product-image-active");
+    clickImg4.removeClass("product-image-active");
+})
+clickImg2.click(function(){
+    $(this).addClass("product-image-active");
+    clickImg1.removeClass("product-image-active");
+    clickImg3.removeClass("product-image-active");
+    clickImg4.removeClass("product-image-active");
+})
+clickImg3.click(function(){
+    $(this).addClass("product-image-active");
+    clickImg1.removeClass("product-image-active");
+    clickImg2.removeClass("product-image-active");
+    clickImg4.removeClass("product-image-active");
+})
+clickImg4.click(function(){
+    $(this).addClass("product-image-active");
+    clickImg1.removeClass("product-image-active");
+    clickImg2.removeClass("product-image-active");
+    clickImg3.removeClass("product-image-active");
+})
