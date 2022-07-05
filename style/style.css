@@ -75,7 +75,7 @@
   background-color: white;
   padding:10px 15px 10px 15px !important;
   border-radius:10px;
-  /* display:none; */
+  display:none;/*This line activates or deactivates the cart contents panel*/
   position:absolute;
   z-index:5;
 }
