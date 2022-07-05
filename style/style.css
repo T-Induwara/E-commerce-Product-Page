@@ -223,8 +223,10 @@
   /*Prodcut showcase css codes*/
   main{
     margin-top:80px;
+    padding-left:12vw;
+    padding-right:12vw;
   }
-  .p-left{
+  .product-showcase{
     width:400px !important;
   }
   #product-image{
