@@ -220,5 +220,26 @@
     vertical-align: middle;
     line-height: 150px; 
   }
+  /*Prodcut showcase css codes*/
+  main{
+    margin-top:80px;
+  }
+  .p-left{
+    width:400px !important;
+  }
+  #product-image{
+    width:100%;
+    border-radius:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .product-o-image img{
+    width:70px;
+    border-radius:10px;
+  }
+  .product-other-images{
+    margin-top:30px;
+  }
 
 } ;
