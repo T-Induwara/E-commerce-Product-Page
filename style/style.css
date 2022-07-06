@@ -158,6 +158,9 @@ main{
   margin-left:auto;
   margin-right:auto;
 }
+.product-image-btn-container{
+  
+}
 .product-o-image img{
   display: none;
 }
@@ -287,6 +290,9 @@ main{
     display:block;
     margin-left:auto;
     margin-right:auto;
+  }
+  .product-image-btn-container{
+    display:none;
   }
   .product-o-image img{
     display:block;
