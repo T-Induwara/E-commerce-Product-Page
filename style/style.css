@@ -74,6 +74,7 @@
 .cart-conts{
   background-color: white;
   padding:10px 15px 10px 15px !important;
+  margin-top:60px !important;
   border-radius:10px;
   display:none;/*This line activates or deactivates the cart contents panel*/
   position:absolute;
@@ -252,6 +253,7 @@ main{
     width:340px;
     padding:0px !important;
     padding-bottom:15px !important;
+    margin:0px !important;
     box-shadow:rgba(0, 0, 0, 0.152) 1px 8px 20px;
     position:absolute;
     right:8vw;
