@@ -133,6 +133,46 @@
   background-color:hsl(26, 99%, 65%);
   transition:0.6s;
 }
+/*Prodcut showcase css codes for mobile devices*/
+main{
+  margin-top:0px;
+  padding-left:0vw;
+  padding-right:0vw;
+}
+.p-left{
+  padding:0px !important;
+}
+.p-container{
+  padding:0px !important;
+}
+.p-row{
+  margin:0px !important;
+}
+.product-showcase{
+  width:360px !important;
+}
+#product-image-showcase{
+  width:100vw !important;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.product-o-image img{
+  display: none;
+}
+.product-o-image img:hover{
+  opacity:60%;
+  transition:0.5s;
+}
+.product-image-active{
+  opacity:30%;
+  transition:0.5s;
+}
+.product-other-images{
+  margin-top:30px;
+}
+
+
 
 @media only screen and (min-width: 1280px) {
   .nav-bar {
@@ -228,13 +268,14 @@
     width:400px !important;
   }
   #product-image-showcase{
-    width:100%;
+    width:100% !important;
     border-radius:10px;
     display:block;
     margin-left:auto;
     margin-right:auto;
   }
   .product-o-image img{
+    display:block;
     width:70px;
     border-radius:10px;
     transition:0.5s;
