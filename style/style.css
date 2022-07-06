@@ -159,7 +159,24 @@ main{
   margin-right:auto;
 }
 .product-image-btn-container{
-  
+  width:100vw;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight:700 !important;
+  font-size: 30px;
+  margin-top:-25vh;
+  padding-left:15px;
+  padding-right:15px;
+}
+.product-image-btn-container div{
+  padding:5px 20px 7px 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  transition:0.5s;
+}
+.product-image-btn-container div:hover{
+  color:rgb(255, 255, 255);
+  background-color: grey;
+  transition:0.5s;
 }
 .product-o-image img{
   display: none;
