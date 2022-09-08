@@ -60,12 +60,16 @@
   z-index:4;
 }
 .cart-logo:hover{
+  cursor:pointer;
   opacity:1;
   transition: 0.7s;
 }
 .usr-icon {
   width: 30%;
   float: right;
+}
+.usr-icon:hover{
+  cursor:pointer;
 }
 .navbar-hr {
   display: none;

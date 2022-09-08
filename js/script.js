@@ -2,11 +2,11 @@ console.log("Script Loaded");
 
 $(".nav-p").mouseenter(function(){
     $(this).addClass("nav-active");
-    $(this).css("cursor","help");
+    $(this).css("cursor","pointer");
 })
 $(".nav-p").mouseleave(function(){
     $(this).removeClass("nav-active");
-    $(this).css("cursor","help");
+    $(this).css("cursor","pointer");
     $(this).css("transition","0.6s");
 })
 $(".usr-icon").mouseenter(function(){
