@@ -241,6 +241,45 @@ main{
   color:hsl(220, 14%, 75%);
   text-decoration:line-through;
 }
+.p-btn-section{
+  justify-content:space-between;
+}
+.p-count-btn{
+  background-color:hsl(223, 64%, 98%);
+  width:180px;
+  height:50px;
+  line-height:50px;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.p-count-btn p{
+  font-size:20px;
+  font-weight:700;
+}
+.minus-btn,.plus-btn{
+  color:hsl(26, 100%, 55%);
+}
+.p-add-cart-btn{
+  background-color:hsl(26, 100%, 55%);
+  width:300px;
+  height:50px;
+  line-height:50px;
+  border-radius:10px;
+  justify-content: center;
+}
+.p-add-cart-btn img{
+  height:40%;
+  filter: brightness(200%) saturate(0%) contrast(1000%);
+  -webkit-filter: brightness(200%) saturate(0%) contrast(1000%);
+  -moz-filter: brightness(200%) saturate(0%) contrast(1000%);
+  padding-right:10px;
+}
+.p-add-cart-btn-txt{
+  color:white;
+  font-size:20px;
+  font-weight:700;
+  padding-left:10px;
+}
 
 
 
@@ -344,6 +383,9 @@ main{
     line-height: 150px; 
   }
   /*Prodcut showcase css codes*/
+  .p-right{
+    padding-right:100px !important;
+  }
   main{
     margin-top:80px;
     padding-left:12vw;

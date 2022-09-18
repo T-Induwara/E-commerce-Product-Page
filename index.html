@@ -115,13 +115,24 @@
                             <h3 class="p-desc-prod-old-price">$250.00</h3>
                         </div>
                         <div class="d-flex p-btn-section"><!--Must add display:flex using only ex css-->
-                            <div class="d-flex p-count-btn">
+                           <!-- <div class="d-flex p-count-btn">
                                 <p class="minus-btn" id="minus-btn">-</p>
                                 <p class="p-count" id="p-count">0</p>
                                 <p class="plus-btn" id="plus-btn">+</p>
+                            </div>-->
+                            <div class="d-flex p-count-btn">
+                                <div class="minus-btn" id="minus-btn">
+                                    <img src="/images/icon-minus.svg" alt="Deduct btn">
+                                </div>
+                                <p class="p-count" id="p-count">0</p>
+                                <div class="plus-btn" id="plus-btn">
+                                    <img src="/images/icon-plus.svg" alt="Add btn">
+                                </div>
                             </div>
                             <div class="d-flex p-add-cart-btn">
-                                <img src="/images/icon-cart.svg" alt="add to cart">
+                                <div class="add-btn-svg">
+                                    <img src="/images/icon-cart.svg" alt="add to cart">
+                                </div>
                                 <p class="p-add-cart-btn-txt">Add to cart</p>
                             </div>
                         </div>
