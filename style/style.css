@@ -200,6 +200,47 @@ main{
   margin-top:30px;
 }
 /*CSS for product description section*/
+.p-desc-section p,h1,h2,h3{
+  font-family: "Kumbh Sans", sans-serif !important;
+}
+.p-desc-brand-name{
+  font-size:16px;
+  font-weight:700;
+  color:hsl(26, 100%, 55%);
+  opacity:70%;
+}
+.p-desc-prod-name{
+  font-size:55px;
+  font-weight:700;
+  color:hsl(220, 13%, 13%);
+}
+.p-desc-prod-desc{
+  font-size:18px;
+  font-weight:400;
+  color:hsl(219, 9%, 45%);
+}
+.p-desc-prod-price{
+  font-size:35px;
+  font-weight:700;
+  color:hsl(220, 13%, 13%);
+}
+.p-desc-prod-disc{
+  text-align: center;
+  line-height:40px;
+  height:40px;
+  width:55px;
+  font-size:20px;
+  font-weight:700;
+  color:hsl(26, 100%, 55%);
+  background-color:hsl(27, 100%, 93%);
+  border-radius:3px;
+}
+.p-desc-prod-old-price{
+  font-size:20px;
+  font-weight:700;
+  color:hsl(220, 14%, 75%);
+  text-decoration:line-through;
+}
 
 
 
@@ -345,5 +386,5 @@ main{
   /*CSS for product description section*/
 
 
-  
+
 } ;
