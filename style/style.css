@@ -202,6 +202,8 @@ main{
 /*CSS for product description section*/
 .p-right{
   padding-top:18vh;
+  padding-left:20px !important;
+  padding-right:20px !important;
 }
 .p-desc-section p,h1,h2,h3{
   font-family: "Kumbh Sans", sans-serif !important;
@@ -213,43 +215,51 @@ main{
   opacity:70%;
 }
 .p-desc-prod-name{
-  font-size:55px;
+  font-size:28px;
   font-weight:700;
   color:hsl(220, 13%, 13%);
 }
 .p-desc-prod-desc{
-  font-size:18px;
+  font-size:14px;
   font-weight:400;
   color:hsl(219, 9%, 45%);
 }
+.prod-price-section{
+  flex-direction:row;
+  justify-content:space-between;
+}
 .p-desc-prod-price{
-  font-size:35px;
+  font-size:25px;
   font-weight:700;
   color:hsl(220, 13%, 13%);
 }
 .p-desc-prod-disc{
   text-align: center;
-  line-height:40px;
-  height:40px;
-  width:55px;
-  font-size:20px;
+  line-height:28px;
+  height:28px;
+  width:45px;
+  font-size:16px;
   font-weight:700;
   color:hsl(26, 100%, 55%);
   background-color:hsl(27, 100%, 93%);
-  border-radius:3px;
+  border-radius:6px;
+  margin-left:20px;
 }
 .p-desc-prod-old-price{
-  font-size:20px;
+  font-size:14px;
   font-weight:700;
   color:hsl(220, 14%, 75%);
   text-decoration:line-through;
+  line-height:28px;
+  height:28px;
 }
 .p-btn-section{
   justify-content:space-between;
+  flex-direction: column;
 }
 .p-count-btn{
   background-color:hsl(223, 64%, 98%);
-  width:180px;
+  width:100%;
   height:50px;
   line-height:50px;
   border-radius: 10px;
@@ -264,7 +274,7 @@ main{
 }
 .p-add-cart-btn{
   background-color:hsl(26, 100%, 55%);
-  width:300px;
+  width:100%;
   height:50px;
   line-height:50px;
   border-radius:10px;
@@ -449,6 +459,9 @@ main{
     font-weight:400;
     color:hsl(219, 9%, 45%);
   }
+  .prod-price-section{
+    flex-direction: column;
+  }
   .p-desc-prod-price{
     font-size:35px;
     font-weight:700;
@@ -464,15 +477,19 @@ main{
     color:hsl(26, 100%, 55%);
     background-color:hsl(27, 100%, 93%);
     border-radius:3px;
+    margin-left:20px;
   }
   .p-desc-prod-old-price{
     font-size:20px;
     font-weight:700;
     color:hsl(220, 14%, 75%);
     text-decoration:line-through;
+    line-height:0px;
+    height:0px;
   }
   .p-btn-section{
     justify-content:space-between;
+    flex-direction: row;
   }
   .p-count-btn{
     background-color:hsl(223, 64%, 98%);
@@ -507,7 +524,7 @@ main{
   .p-add-cart-btn-txt{
     color:white;
     font-size:20px;
-    font-weight:700;
+    font-weight:400;
     padding-left:10px;
   }
 
