@@ -204,7 +204,8 @@ main{
 }
 /*CSS for product description section*/
 .p-right{
-  padding-top:18vh;
+  padding-top:20vh;
+  padding-bottom:40px;
   padding-left:20px !important;
   padding-right:20px !important;
 }
@@ -259,6 +260,7 @@ main{
 .p-btn-section{
   justify-content:space-between;
   flex-direction: column;
+  padding-top:20px;
 }
 .p-count-btn{
   background-color:hsl(223, 64%, 98%);
@@ -282,6 +284,7 @@ main{
   line-height:50px;
   border-radius:10px;
   justify-content: center;
+  margin-top:20px;
 }
 .p-add-cart-btn img{
   height:40%;
@@ -402,6 +405,7 @@ main{
   .p-right{/*This css only for desktop pcs*/
     padding-right:10vw !important;
     padding-top:6vh;
+    padding-bottom:0px;
   }
   main{
     margin-top:80px;
@@ -521,6 +525,7 @@ main{
     line-height:50px;
     border-radius:10px;
     justify-content: center;
+    margin-top:0px;
   }
   .p-add-cart-btn img{
     height:30%;
