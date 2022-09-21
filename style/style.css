@@ -168,6 +168,8 @@ main{
 .product-image-btn-container{
   width:100vw;
   margin-top:-25vh;
+  padding-left:20px;
+  padding-right:20px;
 }
 .product-image-btn-container div{
   width:40px;
