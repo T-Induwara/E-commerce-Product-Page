@@ -400,8 +400,8 @@ main{
   }
   /*Prodcut showcase css codes*/
   .p-right{/*This css only for desktop pcs*/
-    padding-right:100px !important;
-    padding-top:2vh;
+    padding-right:10vw !important;
+    padding-top:6vh;
   }
   main{
     margin-top:80px;
@@ -469,16 +469,16 @@ main{
     padding-top:10px;
   }
   .p-desc-prod-price{
-    font-size:35px;
+    font-size:25px;
     font-weight:700;
     color:hsl(220, 13%, 13%);
   }
   .p-desc-prod-disc{
     text-align: center;
-    line-height:40px;
-    height:40px;
-    width:55px;
-    font-size:20px;
+    line-height:28px;
+    height:28px;
+    width:50px;
+    font-size:16px;
     font-weight:700;
     color:hsl(26, 100%, 55%);
     background-color:hsl(27, 100%, 93%);
@@ -486,7 +486,7 @@ main{
     margin-left:20px;
   }
   .p-desc-prod-old-price{
-    font-size:20px;
+    font-size:16px;
     font-weight:700;
     color:hsl(220, 14%, 75%);
     text-decoration:line-through;
@@ -497,18 +497,18 @@ main{
   .p-btn-section{
     justify-content:space-between;
     flex-direction: row;
-    padding-top:40px;
+    padding-top:30px;
   }
   .p-count-btn{
     background-color:hsl(223, 64%, 98%);
-    width:180px;
+    width:130px;
     height:50px;
     line-height:50px;
     border-radius: 10px;
     justify-content: space-around;
   }
   .p-count-btn p{
-    font-size:20px;
+    font-size:16px;
     font-weight:700;
   }
   .minus-btn,.plus-btn{
@@ -516,23 +516,23 @@ main{
   }
   .p-add-cart-btn{
     background-color:hsl(26, 100%, 55%);
-    width:300px;
+    width:220px;
     height:50px;
     line-height:50px;
     border-radius:10px;
     justify-content: center;
   }
   .p-add-cart-btn img{
-    height:40%;
+    height:30%;
     filter: brightness(200%) saturate(0%) contrast(1000%);
     -webkit-filter: brightness(200%) saturate(0%) contrast(1000%);
     -moz-filter: brightness(200%) saturate(0%) contrast(1000%);
-    padding-right:10px;
+    padding-right:0px;
   }
   .p-add-cart-btn-txt{
     color:white;
-    font-size:20px;
-    font-weight:400;
+    font-size:16px;
+    font-weight:700;
     padding-left:10px;
   }
 
@@ -544,6 +544,12 @@ main{
 
 @media only screen and (min-width:1440px){
   .p-right{
-    padding-top:5vh;
+    padding-top:8vh;
+  }
+  .p-count-btn{
+    width:140px;
+  }
+  .p-add-cart-btn{
+    width:250px;
   }
 }
