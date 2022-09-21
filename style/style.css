@@ -447,23 +447,26 @@ main{
     font-family: "Kumbh Sans", sans-serif !important;
   }
   .p-desc-brand-name{
-    font-size:16px;
+    font-size:12px;
     font-weight:700;
     color:hsl(26, 100%, 55%);
     opacity:70%;
   }
   .p-desc-prod-name{
-    font-size:55px;
+    font-size:40px;
     font-weight:700;
     color:hsl(220, 13%, 13%);
+    padding-top:0px;
   }
   .p-desc-prod-desc{
-    font-size:18px;
+    font-size:14px;
     font-weight:400;
     color:hsl(219, 9%, 45%);
+    padding-top:10px;
   }
   .prod-price-section{
     flex-direction: column;
+    padding-top:10px;
   }
   .p-desc-prod-price{
     font-size:35px;
@@ -489,10 +492,12 @@ main{
     text-decoration:line-through;
     line-height:0px;
     height:0px;
+    padding-top:10px;
   }
   .p-btn-section{
     justify-content:space-between;
     flex-direction: row;
+    padding-top:40px;
   }
   .p-count-btn{
     background-color:hsl(223, 64%, 98%);
