@@ -270,6 +270,12 @@ main{
   border-radius: 10px;
   justify-content: space-around;
 }
+.minus-btn:hover{
+  cursor:pointer;
+}
+.plus-btn:hover{
+  cursor:pointer;
+}
 .p-count-btn p{
   font-size:20px;
   font-weight:700;
@@ -285,6 +291,9 @@ main{
   border-radius:10px;
   justify-content: center;
   margin-top:20px;
+}
+.p-add-cart-btn:hover{
+  cursor:pointer;
 }
 .p-add-cart-btn img{
   height:40%;
