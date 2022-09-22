@@ -90,10 +90,19 @@ clickImg4.click(function(){
 //JS part for product count btn
 const countPBtn = document.getElementById("plus-btn");
 const countMBtn = document.getElementById("minus-btn");
+let pCounter = document.getElementById("p-count");
+let pCount = 0;
 
-countPBtn.onclick = function(){
+countPBtn.addEventListener("click",function(){
     console.log("Count btn plus btn clicked");
-}
-countMBtn.onclick = function(){
+    pCount = pCount + 1; //for increment current product value
+    pCounter.innerHTML = pCount;
+    console.log("Product count is ",pCount);
+});
+
+countMBtn.addEventListener("click",function(){
     console.log("Count btn minus btn clicked");
-}
+    pCount = pCount - 1; //for decrement current product value
+    pCounter.innerHTML = pCount;
+    console.log("Product count is ",pCount);
+});
