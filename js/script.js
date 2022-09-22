@@ -102,7 +102,7 @@ countPBtn.addEventListener("click",function(){
 
 countMBtn.addEventListener("click",function(){
     console.log("Count btn minus btn clicked");
-    if(pCount==0){
+    if(pCount==0){//This part used to check the counter value equals to zero
         alert("Product quantity is 0!!!");
     }
     else{
