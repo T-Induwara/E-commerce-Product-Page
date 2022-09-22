@@ -102,7 +102,12 @@ countPBtn.addEventListener("click",function(){
 
 countMBtn.addEventListener("click",function(){
     console.log("Count btn minus btn clicked");
-    pCount = pCount - 1; //for decrement current product value
-    pCounter.innerHTML = pCount;
-    console.log("Product count is ",pCount);
+    if(pCount==0){
+        alert("Product quantity is 0!!!");
+    }
+    else{
+        pCount = pCount - 1; //for decrement current product value
+        pCounter.innerHTML = pCount;
+        console.log("Product count is ",pCount);
+    }
 });
