@@ -86,3 +86,14 @@ clickImg4.click(function(){
 
     showImage.attr("src","images/image-product-4.jpg");
 })
+
+//JS part for product count btn
+const countPBtn = document.getElementById("plus-btn");
+const countMBtn = document.getElementById("minus-btn");
+
+countPBtn.onclick = function(){
+    console.log("Count btn plus btn clicked");
+}
+countMBtn.onclick = function(){
+    console.log("Count btn minus btn clicked");
+}
