@@ -132,8 +132,10 @@ addCartBtn.addEventListener("click",function(){
         cartFinalAmount.innerHTML = finalPrice.toFixed(2);//toFixed used to print decimal points of the price
         cartEmpState.style.display = "none";
         productRow.style.display = "block";
+        console.log(pCount);
         pCounter.innerHTML = 0;
         pCount.innerHTML = 0;
+        pCount = 0;
     }
     else{
         alert("Please select quantity first!!!");
