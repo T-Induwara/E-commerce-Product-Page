@@ -113,14 +113,28 @@ countMBtn.addEventListener("click",function(){
     }
 });
 
+//JS part for cart functionality
 let cartAmount = document.getElementById("cart-amount");
+let cartQuantity = document.getElementById("p-quantity");
+let cartFinalAmount = document.getElementById("p-final-p");
+const pPrice = 125.00;
+const cartEmpState = document.getElementById("empty-state");
+const productRow = document.getElementById("p-row");
+const delBtn = document.getElementById("del-btn");
 
 addCartBtn.addEventListener("click",function(){
     if(pCount>0){
         cartAmount.innerHTML = pCount;
         cartAmount.style.display = "block";
+        cartQuantity.innerHTML = pCount;
+        let finalPrice = pPrice * pCount;
+        cartFinalAmount.innerHTML = finalPrice.toFixed(2);//toFixed used to print decimal points of the price
+        cartEmpState.style.display = "none";
+        productRow.style.display = "block";
     }
     else{
         alert("Please select quantity first!!!");
     }
 })
+
+
