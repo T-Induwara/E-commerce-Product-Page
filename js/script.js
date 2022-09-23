@@ -90,6 +90,7 @@ clickImg4.click(function(){
 //JS part for product count btn
 const countPBtn = document.getElementById("plus-btn");
 const countMBtn = document.getElementById("minus-btn");
+const addCartBtn = document.getElementById("p-add-cart-btn");
 let pCounter = document.getElementById("p-count");
 let pCount = 0;
 
@@ -111,3 +112,15 @@ countMBtn.addEventListener("click",function(){
         console.log("Product count is ",pCount);
     }
 });
+
+let cartAmount = document.getElementById("cart-amount");
+
+addCartBtn.addEventListener("click",function(){
+    if(pCount>0){
+        cartAmount.innerHTML = pCount;
+        cartAmount.style.display = "block";
+    }
+    else{
+        alert("Please select quantity first!!!");
+    }
+})

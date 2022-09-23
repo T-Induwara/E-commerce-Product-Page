@@ -354,6 +354,7 @@ main{
     border-bottom: 3px solid transparent;
   }
   .cart-amount{
+    display:none;
     position:absolute;
     margin-left:10px;
     color:white;
