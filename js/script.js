@@ -133,9 +133,9 @@ addCartBtn.addEventListener("click",function(){
         cartEmpState.style.display = "none";
         productRow.style.display = "block";
         console.log(pCount);
-        pCounter.innerHTML = 0;
+        pCounter.innerHTML = 0;//This is used to reset the value of product counter btn from visually 
         pCount.innerHTML = 0;
-        pCount = 0;
+        pCount = 0;//This is used to reset the value of product counter btn from logically 
     }
     else{
         alert("Please select quantity first!!!");
