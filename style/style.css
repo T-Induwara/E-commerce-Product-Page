@@ -291,9 +291,12 @@ main{
   border-radius:10px;
   justify-content: center;
   margin-top:20px;
+  transition:0.6s;
 }
 .p-add-cart-btn:hover{
   cursor:pointer;
+  background-color:hsl(26, 99%, 65%);
+  transition:0.6s;
 }
 .p-add-cart-btn img{
   height:40%;
