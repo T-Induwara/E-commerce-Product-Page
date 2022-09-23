@@ -124,6 +124,9 @@
   display: block !important;
   margin:auto !important;
 }
+.del-btn:hover{
+  cursor:pointer;
+}
 .checkout-btn{
   width:100%;
   height:50px;

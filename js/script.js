@@ -124,17 +124,31 @@ const delBtn = document.getElementById("del-btn");
 
 addCartBtn.addEventListener("click",function(){
     if(pCount>0){
-        cartAmount.innerHTML = pCount;
+        let pCartCount = pCounter.innerHTML;
+        cartAmount.innerHTML = pCartCount;
         cartAmount.style.display = "block";
-        cartQuantity.innerHTML = pCount;
-        let finalPrice = pPrice * pCount;
+        cartQuantity.innerHTML = pCartCount;
+        let finalPrice = pPrice * pCartCount;
         cartFinalAmount.innerHTML = finalPrice.toFixed(2);//toFixed used to print decimal points of the price
         cartEmpState.style.display = "none";
         productRow.style.display = "block";
+        pCounter.innerHTML = 0;
+        pCount.innerHTML = 0;
     }
     else{
         alert("Please select quantity first!!!");
     }
-})
+});
+
+delBtn.addEventListener("click",function(){
+    productRow.style.display = "none";
+    cartEmpState.style.display = "block";
+    pCartCount = 0;
+    cartAmount.innerHTML = pCartCount;
+    cartAmount.style.display = "none";
+    cartQuantity.innerHTML = pCartCount;
+    pCounter.innerHTML = 0;
+    pCount.innerHTML = 0;
+});
 
 
