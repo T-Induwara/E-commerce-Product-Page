@@ -681,8 +681,7 @@ h3 {
     display: none;
     width: 100%;
     height: 100%;
-    background-color: hsl(0, 0%, 0%);
-    opacity: 75%;
+    background-color: hsla(0, 0%, 0%, 0.750);
     position: absolute !important;
     top: 0px;
     z-index: 10;
@@ -690,12 +689,21 @@ h3 {
 
   .slide-close-btn {
     position: absolute;
+    top: 25%;
     right: 25%;
   }
 
   .slide-close-btn:hover {
     cursor: pointer;
   }
+
+  .slider-image {
+    width: 400px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+  }
+
 }
 
 @media only screen and (min-width:1440px) {
