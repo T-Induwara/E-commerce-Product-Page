@@ -688,6 +688,11 @@ h3 {
     z-index: 10;
   }
 
+  .slide-close-btn {
+    position: absolute;
+    right: 25%;
+  }
+
   .slide-close-btn:hover {
     cursor: pointer;
   }

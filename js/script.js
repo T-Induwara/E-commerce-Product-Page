@@ -97,6 +97,7 @@ clickImg4.click(function () {
     overlay.style.display = "block";
 })
 
+//JS part for slider overlay close btn
 ovClose.addEventListener("click", function () {
     overlay.style.display = "none";
 })
@@ -161,5 +162,4 @@ delBtn.addEventListener("click", function () {
     pCounter.innerHTML = 0;
     pCount.innerHTML = 0;
 });
-
 
