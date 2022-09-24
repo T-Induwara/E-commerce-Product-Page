@@ -95,21 +95,17 @@ let pCounter = document.getElementById("p-count");
 let pCount = 0;
 
 countPBtn.addEventListener("click",function(){
-    console.log("Count btn plus btn clicked");
     pCount = pCount + 1; //for increment current product value
     pCounter.innerHTML = pCount;
-    console.log("Product count is ",pCount);
 });
 
 countMBtn.addEventListener("click",function(){
-    console.log("Count btn minus btn clicked");
     if(pCount==0){//This part used to check the counter value equals to zero
         alert("Product quantity is 0!!!");
     }
     else{
         pCount = pCount - 1; //for decrement current product value
         pCounter.innerHTML = pCount;
-        console.log("Product count is ",pCount);
     }
 });
 
@@ -132,7 +128,6 @@ addCartBtn.addEventListener("click",function(){
         cartFinalAmount.innerHTML = finalPrice.toFixed(2);//toFixed used to print decimal points of the price
         cartEmpState.style.display = "none";
         productRow.style.display = "block";
-        console.log(pCount);
         pCounter.innerHTML = 0;//This is used to reset the value of product counter btn from visually 
         pCount.innerHTML = 0;
         pCount = 0;//This is used to reset the value of product counter btn from logically 
