@@ -1,31 +1,33 @@
 console.log("Script Loaded");
+const overlay = document.getElementById("slide-overlay");
+const ovClose = document.getElementById("slide-close-btn");
 
-$(".nav-p").mouseenter(function(){
+$(".nav-p").mouseenter(function () {
     $(this).addClass("nav-active");
-    $(this).css("cursor","pointer");
+    $(this).css("cursor", "pointer");
 })
-$(".nav-p").mouseleave(function(){
+$(".nav-p").mouseleave(function () {
     $(this).removeClass("nav-active");
-    $(this).css("cursor","pointer");
-    $(this).css("transition","0.6s");
+    $(this).css("cursor", "pointer");
+    $(this).css("transition", "0.6s");
 })
-$(".usr-icon").mouseenter(function(){
+$(".usr-icon").mouseenter(function () {
     $(this).addClass("usr-hover");
 })
-$(".usr-icon").mouseleave(function(){
+$(".usr-icon").mouseleave(function () {
     $(this).removeClass("usr-hover");
-    $(this).css("transition","0.6s");
+    $(this).css("transition", "0.6s");
 })
 
 //Following codes for mobile nav bar icons
-$(".m-nav").click(function(){
-    $(".nav-links").fadeIn("100",function(){
-        $(".nav-links").css("display","block");
+$(".m-nav").click(function () {
+    $(".nav-links").fadeIn("100", function () {
+        $(".nav-links").css("display", "block");
     })
 });
-$(".m-nav-close").click(function(){
-    $(".nav-links").fadeOut("100",function(){
-        $(".nav-links").css("display","none");
+$(".m-nav-close").click(function () {
+    $(".nav-links").fadeOut("100", function () {
+        $(".nav-links").css("display", "none");
     })
 });
 
@@ -35,15 +37,15 @@ $(".cart-logo").click(function(){
     $(".cart-conts").toggleClass("cart-conts-hide");
 })
 */
-$(".cart-logo").click(function(e){
+$(".cart-logo").click(function (e) {
     $(".cart-conts").toggle();
-    $(".cart-logo").css("opacity","1");
+    $(".cart-logo").css("opacity", "1");
     e.stopPropagation();
 });
 
-$(document).click(function(){
+$(document).click(function () {
     $(".cart-conts").hide();
-    $(".cart-logo").css("opacity","0.7");
+    $(".cart-logo").css("opacity", "0.7");
 });
 
 //following codes for product showcase section
@@ -54,37 +56,49 @@ let clickImg4 = $("#p-image4");
 
 let showImage = $("#product-image-showcase");
 
-clickImg1.click(function(){
+clickImg1.click(function () {
     $(this).addClass("product-image-active");
     clickImg2.removeClass("product-image-active");
     clickImg3.removeClass("product-image-active");
     clickImg4.removeClass("product-image-active");
 
-    showImage.attr("src","images/image-product-1.jpg");
+    showImage.attr("src", "images/image-product-1.jpg");
+
+    overlay.style.display = "block";
 })
-clickImg2.click(function(){
+clickImg2.click(function () {
     $(this).addClass("product-image-active");
     clickImg1.removeClass("product-image-active");
     clickImg3.removeClass("product-image-active");
     clickImg4.removeClass("product-image-active");
 
-    showImage.attr("src","images/image-product-2.jpg");
+    showImage.attr("src", "images/image-product-2.jpg");
+
+    overlay.style.display = "block";
 })
-clickImg3.click(function(){
+clickImg3.click(function () {
     $(this).addClass("product-image-active");
     clickImg1.removeClass("product-image-active");
     clickImg2.removeClass("product-image-active");
     clickImg4.removeClass("product-image-active");
 
-    showImage.attr("src","images/image-product-3.jpg");
+    showImage.attr("src", "images/image-product-3.jpg");
+
+    overlay.style.display = "block";
 })
-clickImg4.click(function(){
+clickImg4.click(function () {
     $(this).addClass("product-image-active");
     clickImg1.removeClass("product-image-active");
     clickImg2.removeClass("product-image-active");
     clickImg3.removeClass("product-image-active");
 
-    showImage.attr("src","images/image-product-4.jpg");
+    showImage.attr("src", "images/image-product-4.jpg");
+
+    overlay.style.display = "block";
+})
+
+ovClose.addEventListener("click", function () {
+    overlay.style.display = "none";
 })
 
 //JS part for product count btn
@@ -94,16 +108,16 @@ const addCartBtn = document.getElementById("p-add-cart-btn");
 let pCounter = document.getElementById("p-count");
 let pCount = 0;
 
-countPBtn.addEventListener("click",function(){
+countPBtn.addEventListener("click", function () {
     pCount = pCount + 1; //for increment current product value
     pCounter.innerHTML = pCount;
 });
 
-countMBtn.addEventListener("click",function(){
-    if(pCount==0){//This part used to check the counter value equals to zero
+countMBtn.addEventListener("click", function () {
+    if (pCount == 0) {//This part used to check the counter value equals to zero
         alert("Product quantity is 0!!!");
     }
-    else{
+    else {
         pCount = pCount - 1; //for decrement current product value
         pCounter.innerHTML = pCount;
     }
@@ -118,8 +132,8 @@ const cartEmpState = document.getElementById("empty-state");
 const productRow = document.getElementById("p-row");
 const delBtn = document.getElementById("del-btn");
 
-addCartBtn.addEventListener("click",function(){
-    if(pCount>0){
+addCartBtn.addEventListener("click", function () {
+    if (pCount > 0) {
         let pCartCount = pCounter.innerHTML;
         cartAmount.innerHTML = pCartCount;
         cartAmount.style.display = "block";
@@ -132,12 +146,12 @@ addCartBtn.addEventListener("click",function(){
         pCount.innerHTML = 0;
         pCount = 0;//This is used to reset the value of product counter btn from logically 
     }
-    else{
+    else {
         alert("Please select quantity first!!!");
     }
 });
 
-delBtn.addEventListener("click",function(){
+delBtn.addEventListener("click", function () {
     productRow.style.display = "none";
     cartEmpState.style.display = "block";
     pCartCount = 0;
