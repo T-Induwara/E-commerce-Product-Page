@@ -693,8 +693,8 @@ h3 {
     -webkit-filter: brightness(200%) saturate(0%) contrast(1000%);
     -moz-filter: brightness(200%) saturate(0%) contrast(1000%);
     position: absolute;
-    top: 25%;
-    right: 25%;
+    top: 10%;
+    right: 31%;
   }
 
   .slide-close-btn:hover {
@@ -727,6 +727,11 @@ h3 {
     z-index: 20;
   }
 
+  .s-prev,
+  .s-next:hover {
+    cursor: pointer;
+  }
+
   .slider-thumb-btns {
     margin-top: 280px;
   }
@@ -739,6 +744,7 @@ h3 {
   .product-t-image img {
     width: 70px;
     border-radius: 10px;
+    cursor: pointer;
   }
 
 }
@@ -761,6 +767,10 @@ h3 {
     padding-right: 6vw !important;
   }
 
+  .slide-close-btn {
+    right: 33%;
+  }
+
   .slider-nav-btns {
     padding-left: 230px;
     padding-right: 230px;
@@ -772,6 +782,10 @@ h3 {
   .p-container {
     padding-left: 2vw !important;
     padding-right: 2vw !important;
+  }
+
+  .slide-close-btn {
+    right: 36%;
   }
 
   .slider-nav-btns {
