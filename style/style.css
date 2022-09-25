@@ -678,7 +678,8 @@ h3 {
 
   /*CSS part for slideshow overlay*/
   .slide-overlay {
-    display: none;
+    /*display: none;*/
+    /*Remove this line after checking*/
     width: 100%;
     height: 100%;
     background-color: hsla(0, 0%, 0%, 0.750);
@@ -688,6 +689,9 @@ h3 {
   }
 
   .slide-close-btn {
+    filter: brightness(200%) saturate(0%) contrast(1000%);
+    -webkit-filter: brightness(200%) saturate(0%) contrast(1000%);
+    -moz-filter: brightness(200%) saturate(0%) contrast(1000%);
     position: absolute;
     top: 25%;
     right: 25%;
@@ -702,6 +706,25 @@ h3 {
     border-radius: 20px;
     position: absolute;
     top: 10%;
+  }
+
+  .slider-nav-btns {
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-top: 250px;
+  }
+
+  .s-prev,
+  .s-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    z-index: 20;
   }
 
 }
@@ -723,11 +746,23 @@ h3 {
     padding-left: 6vw !important;
     padding-right: 6vw !important;
   }
+
+  .slider-nav-btns {
+    padding-left: 370px;
+    padding-right: 370px;
+    margin-top: 250px;
+  }
 }
 
 @media only screen and (min-width:1900px) {
   .p-container {
     padding-left: 2vw !important;
     padding-right: 2vw !important;
+  }
+
+  .slider-nav-btns {
+    padding-left: 550px;
+    padding-right: 550px;
+    margin-top: 250px;
   }
 }
