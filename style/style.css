@@ -694,7 +694,7 @@ h3 {
     -moz-filter: brightness(200%) saturate(0%) contrast(1000%);
     position: absolute;
     top: 10%;
-    right: 31%;
+    right: 33%;
   }
 
   .slide-close-btn:hover {
@@ -702,10 +702,10 @@ h3 {
   }
 
   .slider-image {
-    width: 530px;
+    width: 470px;
     border-radius: 20px;
     position: absolute;
-    top: 15%;
+    top: 20%;
   }
 
   .slider-nav-btns {
@@ -768,13 +768,13 @@ h3 {
   }
 
   .slide-close-btn {
-    right: 33%;
+    right: 35%;
   }
 
   .slider-nav-btns {
     padding-left: 230px;
     padding-right: 230px;
-    margin-top: 380px;
+    margin-top: 320px;
   }
 }
 
@@ -785,7 +785,7 @@ h3 {
   }
 
   .slide-close-btn {
-    right: 36%;
+    right: 38%;
   }
 
   .slider-nav-btns {
