@@ -178,7 +178,7 @@ thumbImg1.click(function () {
     thumbImg4.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-1.jpg");
-})
+});
 thumbImg2.click(function () {
     $(this).addClass("product-image-active");
     thumbImg1.removeClass("product-image-active");
@@ -186,7 +186,7 @@ thumbImg2.click(function () {
     thumbImg4.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-2.jpg");
-})
+});
 thumbImg3.click(function () {
     $(this).addClass("product-image-active");
     thumbImg1.removeClass("product-image-active");
@@ -194,7 +194,7 @@ thumbImg3.click(function () {
     thumbImg4.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-3.jpg");
-})
+});
 thumbImg4.click(function () {
     $(this).addClass("product-image-active");
     thumbImg1.removeClass("product-image-active");
@@ -202,4 +202,6 @@ thumbImg4.click(function () {
     thumbImg3.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-4.jpg");
-})
+});
+
+
