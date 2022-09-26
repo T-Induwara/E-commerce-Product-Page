@@ -49,12 +49,12 @@ $(document).click(function () {
 });
 
 //following codes for product showcase section
-let clickImg1 = $("#p-image1");
-let clickImg2 = $("#p-image2");
-let clickImg3 = $("#p-image3");
-let clickImg4 = $("#p-image4");
+const clickImg1 = $("#p-image1");
+const clickImg2 = $("#p-image2");
+const clickImg3 = $("#p-image3");
+const clickImg4 = $("#p-image4");
 
-let showImage = $("#product-image-showcase");
+const showImage = $("#product-image-showcase");
 
 clickImg1.click(function () {
     $(this).addClass("product-image-active");
@@ -164,7 +164,42 @@ delBtn.addEventListener("click", function () {
 });
 
 //JS part for overlay slider
-const thumbImg1 = document.getElementById("t-image1");
-const thumbImg2 = document.getElementById("t-image2");
-const thumbImg3 = document.getElementById("t-image3");
-const thumbImg4 = document.getElementById("t-image4");
+const thumbImg1 = $("#t-image1");
+const thumbImg2 = $("#t-image2");
+const thumbImg3 = $("#t-image3");
+const thumbImg4 = $("#t-image4");
+
+const sliderImg = $("#slider-image");
+
+thumbImg1.click(function () {
+    $(this).addClass("product-image-active");
+    thumbImg2.removeClass("product-image-active");
+    thumbImg3.removeClass("product-image-active");
+    thumbImg4.removeClass("product-image-active");
+
+    sliderImg.attr("src", "images/image-product-1.jpg");
+})
+thumbImg2.click(function () {
+    $(this).addClass("product-image-active");
+    thumbImg1.removeClass("product-image-active");
+    thumbImg3.removeClass("product-image-active");
+    thumbImg4.removeClass("product-image-active");
+
+    sliderImg.attr("src", "images/image-product-2.jpg");
+})
+thumbImg3.click(function () {
+    $(this).addClass("product-image-active");
+    thumbImg1.removeClass("product-image-active");
+    thumbImg2.removeClass("product-image-active");
+    thumbImg4.removeClass("product-image-active");
+
+    sliderImg.attr("src", "images/image-product-3.jpg");
+})
+thumbImg4.click(function () {
+    $(this).addClass("product-image-active");
+    thumbImg1.removeClass("product-image-active");
+    thumbImg2.removeClass("product-image-active");
+    thumbImg3.removeClass("product-image-active");
+
+    sliderImg.attr("src", "images/image-product-4.jpg");
+})
