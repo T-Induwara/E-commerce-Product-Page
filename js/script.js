@@ -163,3 +163,8 @@ delBtn.addEventListener("click", function () {
     pCount.innerHTML = 0;
 });
 
+//JS part for overlay slider
+const thumbImg1 = document.getElementById("t-image1");
+const thumbImg2 = document.getElementById("t-image2");
+const thumbImg3 = document.getElementById("t-image3");
+const thumbImg4 = document.getElementById("t-image4");
