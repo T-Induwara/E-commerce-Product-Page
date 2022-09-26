@@ -745,6 +745,12 @@ h3 {
     width: 70px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .product-t-image img:hover {
+    opacity: 60%;
+    transition: 0.5s;
   }
 
 }
