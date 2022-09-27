@@ -211,9 +211,11 @@ thumbImg4.click(function () {
     sliderImg.attr("src", "images/image-product-4.jpg");
     slideCount = 4;
 });
+
+//JS part for desktop overlay slider arrow btns
 console.log(slideCount);
 prevBtn.click(function () {
-    if (slideCount > 0) {
+    if (slideCount > 1) {
         console.log("Next clicked")
         slideCount = slideCount - 1;
         console.log(slideCount);
@@ -248,6 +250,50 @@ nextBtn.click(function () {
         }
         else if (slideCount == 4) {
             sliderImg.attr("src", "images/image-product-4.jpg");
+        }
+    }
+})
+
+//JS part for mobile image slider btn
+const mPrevBtn = $("#mobile-prev-btn");
+const mNxtBtn = $("#mobile-nxt-btn");
+
+mPrevBtn.click(function () {
+    if (slideCount > 1) {
+        console.log("Next clicked")
+        slideCount = slideCount - 1;
+        console.log(slideCount);
+        if (slideCount == 1) {
+            showImage.attr("src", "images/image-product-1.jpg");
+        }
+        else if (slideCount == 2) {
+            showImage.attr("src", "images/image-product-2.jpg");
+        }
+        else if (slideCount == 3) {
+            showImage.attr("src", "images/image-product-3.jpg");
+        }
+        else if (slideCount == 4) {
+            showImage.attr("src", "images/image-product-4.jpg");
+        }
+    }
+})
+
+mNxtBtn.click(function () {
+    if (slideCount < 4) {
+        console.log("Next clicked")
+        slideCount = slideCount + 1;
+        console.log(slideCount);
+        if (slideCount == 1) {
+            showImage.attr("src", "images/image-product-1.jpg");
+        }
+        else if (slideCount == 2) {
+            showImage.attr("src", "images/image-product-2.jpg");
+        }
+        else if (slideCount == 3) {
+            showImage.attr("src", "images/image-product-3.jpg");
+        }
+        else if (slideCount == 4) {
+            showImage.attr("src", "images/image-product-4.jpg");
         }
     }
 })
