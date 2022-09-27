@@ -171,6 +171,9 @@ const thumbImg4 = $("#t-image4");
 
 const sliderImg = $("#slider-image");
 
+const prevBtn = $("#slider-prev")
+const nextBtn = $("#slider-next");
+
 thumbImg1.click(function () {
     $(this).addClass("product-image-active");
     thumbImg2.removeClass("product-image-active");
@@ -203,5 +206,13 @@ thumbImg4.click(function () {
 
     sliderImg.attr("src", "images/image-product-4.jpg");
 });
+
+prevBtn.click(function () {
+    console.log("Prev clicked")
+})
+
+nextBtn.click(function () {
+    console.log("Next clicked")
+})
 
 
