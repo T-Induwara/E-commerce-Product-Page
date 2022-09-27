@@ -173,6 +173,7 @@ const sliderImg = $("#slider-image");
 
 const prevBtn = $("#slider-prev")
 const nextBtn = $("#slider-next");
+const slideCount = 0;
 
 thumbImg1.click(function () {
     $(this).addClass("product-image-active");
@@ -209,6 +210,7 @@ thumbImg4.click(function () {
 
 prevBtn.click(function () {
     console.log("Prev clicked")
+
 })
 
 nextBtn.click(function () {
