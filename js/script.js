@@ -182,6 +182,7 @@ thumbImg1.click(function () {
     thumbImg4.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-1.jpg");
+    slideCount = 1;
 });
 thumbImg2.click(function () {
     $(this).addClass("product-image-active");
@@ -190,6 +191,7 @@ thumbImg2.click(function () {
     thumbImg4.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-2.jpg");
+    slideCount = 2;
 });
 thumbImg3.click(function () {
     $(this).addClass("product-image-active");
@@ -198,6 +200,7 @@ thumbImg3.click(function () {
     thumbImg4.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-3.jpg");
+    slideCount = 3;
 });
 thumbImg4.click(function () {
     $(this).addClass("product-image-active");
@@ -206,6 +209,7 @@ thumbImg4.click(function () {
     thumbImg3.removeClass("product-image-active");
 
     sliderImg.attr("src", "images/image-product-4.jpg");
+    slideCount = 4;
 });
 console.log(slideCount);
 prevBtn.click(function () {
