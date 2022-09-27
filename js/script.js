@@ -173,7 +173,7 @@ const sliderImg = $("#slider-image");
 
 const prevBtn = $("#slider-prev")
 const nextBtn = $("#slider-next");
-const slideCount = 0;
+let slideCount = 1;
 
 thumbImg1.click(function () {
     $(this).addClass("product-image-active");
@@ -207,14 +207,45 @@ thumbImg4.click(function () {
 
     sliderImg.attr("src", "images/image-product-4.jpg");
 });
-
+console.log(slideCount);
 prevBtn.click(function () {
-    console.log("Prev clicked")
-
+    if (slideCount > 0) {
+        console.log("Next clicked")
+        slideCount = slideCount - 1;
+        console.log(slideCount);
+        if (slideCount == 1) {
+            sliderImg.attr("src", "images/image-product-1.jpg");
+        }
+        else if (slideCount == 2) {
+            sliderImg.attr("src", "images/image-product-2.jpg");
+        }
+        else if (slideCount == 3) {
+            sliderImg.attr("src", "images/image-product-3.jpg");
+        }
+        else if (slideCount == 4) {
+            sliderImg.attr("src", "images/image-product-4.jpg");
+        }
+    }
 })
 
 nextBtn.click(function () {
-    console.log("Next clicked")
+    if (slideCount < 4) {
+        console.log("Next clicked")
+        slideCount = slideCount + 1;
+        console.log(slideCount);
+        if (slideCount == 1) {
+            sliderImg.attr("src", "images/image-product-1.jpg");
+        }
+        else if (slideCount == 2) {
+            sliderImg.attr("src", "images/image-product-2.jpg");
+        }
+        else if (slideCount == 3) {
+            sliderImg.attr("src", "images/image-product-3.jpg");
+        }
+        else if (slideCount == 4) {
+            sliderImg.attr("src", "images/image-product-4.jpg");
+        }
+    }
 })
 
 
