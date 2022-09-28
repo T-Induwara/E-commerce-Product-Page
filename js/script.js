@@ -112,6 +112,8 @@ const countMBtn = document.getElementById("minus-btn");
 const addCartBtn = document.getElementById("p-add-cart-btn");
 let pCounter = document.getElementById("p-count");
 let pCount = 0;
+const quantPop = document.getElementById("quantity0-popup");
+const selPop = document.getElementById("sel-quantity-popup");
 
 countPBtn.addEventListener("click", function () {
     pCount = pCount + 1; //for increment current product value
@@ -120,7 +122,12 @@ countPBtn.addEventListener("click", function () {
 
 countMBtn.addEventListener("click", function () {
     if (pCount == 0) {//This part used to check the counter value equals to zero
-        alert("Product quantity is 0!!!");
+        //alert("Product quantity is 0!!!");
+        quantPop.style.display = "block";
+        setTimeout(() => {
+            quantPop.style.display = 'none';
+            quantPop.addClass("popup-hide");
+        }, 2000);//Timeout for popups
     }
     else {
         pCount = pCount - 1; //for decrement current product value
@@ -152,7 +159,12 @@ addCartBtn.addEventListener("click", function () {
         pCount = 0;//This is used to reset the value of product counter btn from logically 
     }
     else {
-        alert("Please select quantity first!!!");
+        //alert("Please select quantity first!!!");
+        selPop.style.display = "block";
+        setTimeout(() => {
+            selPop.style.display = 'none';
+            selPop.addClass("popup-hide");
+        }, 2000);//Timeout for popups
     }
 });
 
