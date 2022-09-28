@@ -220,9 +220,7 @@ thumbImg4.click(function () {
 console.log(slideCount);
 prevBtn.click(function () {
     if (slideCount > 1) {
-        console.log("Next clicked")
         slideCount = slideCount - 1;
-        console.log(slideCount);
         if (slideCount == 1) {
             sliderImg.attr("src", "images/image-product-1.jpg");
         }
@@ -240,9 +238,7 @@ prevBtn.click(function () {
 
 nextBtn.click(function () {
     if (slideCount < 4) {
-        console.log("Next clicked")
         slideCount = slideCount + 1;
-        console.log(slideCount);
         if (slideCount == 1) {
             sliderImg.attr("src", "images/image-product-1.jpg");
         }
@@ -264,9 +260,7 @@ const mNxtBtn = $("#mobile-nxt-btn");
 
 mPrevBtn.click(function () {
     if (slideCount > 1) {
-        console.log("Next clicked")
         slideCount = slideCount - 1;
-        console.log(slideCount);
         if (slideCount == 1) {
             showImage.attr("src", "images/image-product-1.jpg");
         }
@@ -284,9 +278,7 @@ mPrevBtn.click(function () {
 
 mNxtBtn.click(function () {
     if (slideCount < 4) {
-        console.log("Next clicked")
         slideCount = slideCount + 1;
-        console.log(slideCount);
         if (slideCount == 1) {
             showImage.attr("src", "images/image-product-1.jpg");
         }
