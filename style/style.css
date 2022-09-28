@@ -733,7 +733,7 @@ h3 {
   }
 
   .slider-thumb-btns {
-    margin-top: 280px;
+    margin-top: 260px;
   }
 
   .product-t-image {
@@ -777,10 +777,21 @@ h3 {
     right: 35%;
   }
 
+  .slider-image {
+    width: 470px;
+    border-radius: 20px;
+    position: absolute;
+    top: 18%;
+  }
+
   .slider-nav-btns {
     padding-left: 300px;
     padding-right: 300px;
-    margin-top: 320px;
+    margin-top: 370px;
+  }
+
+  .slider-thumb-btns {
+    margin-top: 210px;
   }
 }
 
@@ -794,9 +805,20 @@ h3 {
     right: 38%;
   }
 
+  .slider-image {
+    width: 470px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+  }
+
   .slider-nav-btns {
     padding-left: 500px;
     padding-right: 500px;
     margin-top: 400px;
+  }
+
+  .slider-thumb-btns {
+    margin-top: 220px;
   }
 }
