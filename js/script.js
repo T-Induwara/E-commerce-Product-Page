@@ -56,6 +56,10 @@ const clickImg4 = $("#p-image4");
 
 const showImage = $("#product-image-showcase");
 
+showImage.click(function () {
+    overlay.style.display = "block";
+})
+
 clickImg1.click(function () {
     $(this).addClass("product-image-active");
     clickImg2.removeClass("product-image-active");
@@ -64,8 +68,6 @@ clickImg1.click(function () {
 
     showImage.attr("src", "images/image-product-1.jpg");
     sliderImg.attr("src", "images/image-product-1.jpg");
-
-    overlay.style.display = "block";
 })
 clickImg2.click(function () {
     $(this).addClass("product-image-active");
@@ -75,8 +77,6 @@ clickImg2.click(function () {
 
     showImage.attr("src", "images/image-product-2.jpg");
     sliderImg.attr("src", "images/image-product-2.jpg");
-
-    overlay.style.display = "block";
 })
 clickImg3.click(function () {
     $(this).addClass("product-image-active");
@@ -86,8 +86,6 @@ clickImg3.click(function () {
 
     showImage.attr("src", "images/image-product-3.jpg");
     sliderImg.attr("src", "images/image-product-3.jpg");
-
-    overlay.style.display = "block";
 })
 clickImg4.click(function () {
     $(this).addClass("product-image-active");
@@ -97,8 +95,6 @@ clickImg4.click(function () {
 
     showImage.attr("src", "images/image-product-4.jpg");
     sliderImg.attr("src", "images/image-product-4.jpg");
-
-    overlay.style.display = "block";
 })
 
 //JS part for slider overlay close btn
