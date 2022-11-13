@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://e-commerce-product-page-gamma.vercel.app/)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/ecommerce-product-page-wZcn8AhgTb)
 - Live Site URL: [Click here](https://e-commerce-product-page-gamma.vercel.app/)
 
 ## My process
